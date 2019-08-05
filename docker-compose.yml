@@ -1,0 +1,33 @@
+version: '3.4'
+
+services:
+  client_crud_front:
+    container_name: client_crud_front
+    build:
+      context: './client-basic-crud-frontend'
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - '5000:80'
+    depends_on:
+      - clientbasiccrud.application
+
+  clientbasiccrud.application:
+    image: ${DOCKER_REGISTRY-}clientbasiccrudapplication
+    build:
+      context: './ClientBasicCrud'
+      dockerfile: ClientBasicCrud.Application/Dockerfile
+    ports:
+      - "8000:80"
+    depends_on:
+      - mssql
+  
+  mssql:
+    image: "mcr.microsoft.com/mssql/server:2017-latest"
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "MinhaSenha@123"
+      ACCEPT_EULA: "Y"
