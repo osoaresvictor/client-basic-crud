@@ -15,7 +15,6 @@ services:
       - clientbasiccrud.application
 
   clientbasiccrud.application:
-    image: ${DOCKER_REGISTRY-}clientbasiccrudapplication
     build:
       context: './ClientBasicCrud'
       dockerfile: ClientBasicCrud.Application/Dockerfile
