@@ -1,7 +1,7 @@
 
 # Client Basic CRUD
 
-Apenas um projeto de exemplo que tem como stack Docker, ASP.Net Core 2.1 (com Entity Framework) e React.
+Apenas um projeto de exemplo que tem como stack Docker, ASP.Net Core 2.1 (com Entity Framework), SQL Server 2017 e React.
 
 Para executar, basta ir na pasta raiz do projeto com o terminal e executar `docker-compose up -d`.
 
