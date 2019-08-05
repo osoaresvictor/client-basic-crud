@@ -8,3 +8,5 @@ Para executar, basta ir na pasta raiz do projeto com o terminal e executar `dock
 Importante:
 - Documentação Swagger da API: http://localhost:8000/swagger
 - Endpoint para acesso ao CRUD: http://localhost:5000
+
+*OBS: Subir o APP todo (Banco + Backend + FrontEnd [principalmente, por causa do node_modules]) leva alguns minutos.*
