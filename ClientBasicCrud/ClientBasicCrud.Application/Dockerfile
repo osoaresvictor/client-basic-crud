@@ -11,7 +11,6 @@ RUN dotnet restore "ClientBasicCrud.Application/ClientBasicCrud.Application.cspr
 COPY . .
 WORKDIR "/src/ClientBasicCrud.Application"
 RUN dotnet build "ClientBasicCrud.Application.csproj" -c Release -o /app
-RUN dotnet ef database update
 
 FROM build AS publish
 RUN dotnet publish "ClientBasicCrud.Application.csproj" -c Release -o /app
