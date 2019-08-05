@@ -7,4 +7,4 @@ Para executar, basta ir na pasta raiz do projeto com o terminal e executar `dock
 
 Importante:
 - Documentação Swagger da API: http://localhost:8000/swagger
-- Endpoint para acesso ao CRUD: http://localhost:8000
+- Endpoint para acesso ao CRUD: http://localhost:5000
